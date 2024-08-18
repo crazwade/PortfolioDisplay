@@ -54,7 +54,7 @@ export const useDataStore = defineStore('data', {
         link: 'https://crazwade.github.io/MiniGamePlayground/',
         angel: '0deg',
         rotateAngel: '0deg',
-        label: 'Mini Game 遊戲場',
+        label: 'MiniGame 遊戲場',
         image: minigame,
       },
       {
@@ -68,7 +68,7 @@ export const useDataStore = defineStore('data', {
         link: 'https://crazwade.github.io/PokerComboAnalyzer/',
         angel: '0deg',
         rotateAngel: '0deg',
-        label: '撲克牌 牌型組合與分析',
+        label: '撲克牌牌型組合與分析',
         image: poker,
       },
       {

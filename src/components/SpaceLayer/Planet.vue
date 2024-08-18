@@ -24,7 +24,7 @@ defineProps<{
     <transition name="fade">
       <div
         v-if="showLabel"
-        class="text-white absolute -bottom-10 left-1/2 -translate-x-1/2 test"
+        class="label text-white absolute -bottom-12 left-1/2 -translate-x-1/2 w-fit whitespace-nowrap font-mono font-black text-2xl"
       >
         {{ label }}
       </div>
@@ -36,6 +36,8 @@ defineProps<{
 .planet {
   width: var(--planet_size);
   height: var(--planet_size);
+  -webkit-box-shadow: 0 0 15px -2px rgb(23, 111, 244), -6px -6px 20px -10px rgba(191, 255, 243, 0.78);
+  box-shadow: 0 0 15px -2px rgb(23, 111, 244), -6px -6px 20px -10px rgba(191, 255, 243, 0.78);
   transform:
     translateX(calc(var(--planet_size) / 2 * -1)) translateY(calc(var(--planet_size) / 2 * -1)) rotate(var(--planetAngel))
     translateX(calc(var(--plate_len) / 2)) rotateX(-90deg) rotateY(calc(var(--planetRotateAngel)))
@@ -49,6 +51,10 @@ defineProps<{
     -webkit-box-shadow: inset -25px -25px 50px #000e2f,
     inset 10px 10px 30px -10px #ffffffe8;
   }
+}
+
+.label {
+  text-shadow: 0 0 5px #989595, 0 0 5px #989595, 0 0 5px #989595, 0 0 5px #989595; font-weight: bold;
 }
 
 .fade-enter-active,
