@@ -1,45 +1,20 @@
 # Planetarium
 
-This template should help get you started developing with Vue 3 in Vite.
+這個專案的雛形是我 2021 第一次成為前端工程師負責的專案，當時是使用 vue2 也在缺乏組件和維護性的情況下撰寫
 
-## Recommended IDE Setup
+此次特別將這個專案改成我的作品集大成，並充分的以目前的思維架構來開發，加入共用組件且容易維護的思維，並且統一透過 store 來存放資料方便外來使用者的新增刪除，也加入後來習得的技術 TypeScript 以及 JSDoc 算是紀念自己有所成長
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+這個專案透過 3D 的翻轉來控制星球的旋轉來達到 3D 的效果
 
-## Type Support for `.vue` Imports in TS
+## 資料改寫
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+- 畫面資料由 src/stores/data.ts 統一處理
 
-## Customize configuration
+## 技術堆疊
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Run Unit Tests with [Vitest](https://vitest.dev/)
-
-```sh
-npm run test:unit
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+- Vue 3
+- TypeScript
+- Vite
+- Eslint
+- TailwindCSS
+- Element Plus
