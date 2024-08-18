@@ -12,7 +12,7 @@ const store = useDataStore();
         :class="[store.isRolling ? 'cursor-not-allowed' : 'cursor-w-resize']"
         @click="store.rotatePlate('right')"
       />
-      <div class="w-full cursor-pointer" />
+      <div @click="store.gotoPJ" class="w-full cursor-pointer" />
       <div
         class="control w-[50vw] bg-gray-300 opacity-10"
         :class="[store.isRolling ? 'cursor-not-allowed' : 'cursor-e-resize']"

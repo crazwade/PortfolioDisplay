@@ -84,6 +84,9 @@ export const useDataStore = defineStore('data', {
     getPlanets: (state) => state.data
   },
   actions: {
+    gotoPJ() {
+      window.open(this.data[this.currentIndex].link);
+    },
     initPlanet() {
       this.data = this.data.map((item, index) => ({
         ...item,
