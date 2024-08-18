@@ -2,6 +2,7 @@
 import { onMounted } from 'vue';
 import { RouterView } from 'vue-router';
 import { useDataStore } from './stores/data';
+import { version } from '../package.json';
 
 const store = useDataStore();
 
@@ -12,6 +13,9 @@ onMounted(() => {
 
 <template>
   <RouterView />
+  <div class="fixed bottom-0 right-0 text-white opacity-15">
+    ver{{ version }}
+  </div>
 </template>
 
 <style lang="scss">
