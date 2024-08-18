@@ -1,6 +1,6 @@
 {
   "name": "planetarium",
-  "version": "1.0.0",
+  "version": "1.0.0a",
   "private": true,
   "type": "module",
   "scripts": {
